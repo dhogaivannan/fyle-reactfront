@@ -21,7 +21,7 @@ function App() {
   useEffect((state) => {
     console.log(state)
     async function fetchData(query) {
-      let response = await fetch("http://127.0.0.1:8000/api/branches/?q="+query+" "+city+ '&limit='+LIMIT +'&offset=' +offset);
+      let response = await fetch("https://blooming-mountain-80793.herokuapp.com/api/branches/?q="+query+" "+city+ '&limit='+LIMIT +'&offset=' +offset);
       let jjson = await response.json()
       setData(jjson.results)
       setCount((jjson.count))
@@ -35,7 +35,7 @@ function App() {
   }, [searchTerm,city])
   useEffect(() => {
     async function fetchData(query) {
-        let response = await fetch("http://127.0.0.1:8000/api/branches/?q="+query+" "+city+ '&limit='+LIMIT +'&offset=' +offset);
+        let response = await fetch("https://blooming-mountain-80793.herokuapp.com/api/branches/?q="+query+" "+city+ '&limit='+LIMIT +'&offset=' +offset);
         let jjson = await response.json()
         setData(jjson.results)
         setCount((jjson.count)) 
@@ -45,7 +45,7 @@ function App() {
     },[offset])
 
 
-  const apiURL = 'http://127.0.0.1:8000/api/branches/?q=' ;
+  const apiURL = 'https://blooming-mountain-80793.herokuapp.com/api/branches/?q=' ;
   useEffect(() => {
     async function fetchData() {
       let response = await fetch(apiURL + city + '&limit='+LIMIT +'&offset=' +offset);
