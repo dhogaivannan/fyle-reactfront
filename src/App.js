@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Table from 'rc-table';
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 const LIMIT = 10;
 function App() {
@@ -146,9 +144,9 @@ function App() {
 
     </div>
   );
-  function search(e){
+  /* function search(e){
     console.log(e.target.value);
-  }
+  } */
   function next() {
     setOffset(offset+LIMIT)
   }
