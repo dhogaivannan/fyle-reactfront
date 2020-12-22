@@ -1,0 +1,30 @@
+/* .App {
+  text-align: center;
+}
+ */
+
+.menu {
+  display: flex;
+}
+
+.h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.forward {
+  margin-left: 1em;
+}
+
+.menu-search {
+  margin-left: 1em;
+}
